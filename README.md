@@ -1,4 +1,4 @@
-# dedecms-sdk
+# dedecms-plug-in
 
 ## 安装插件
 
