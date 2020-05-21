@@ -19,19 +19,19 @@ $write_list = array('alipay', 'bank', 'cod', 'yeepay');
 $write_list = array('alipay', 'bank', 'cod', 'yeepay', 'paysapi_alipay', 'paysapi_alipay_nophone', 'paysapi_wechat');
 ```
   
-3, 进入 「织梦CMS管理后台」-「系统」-「系统设置」-「SQL命令行工具」-「运行SQL命令行」-「单行命令」
+3, 进入 「织梦CMS管理后台」-「系统」-「系统设置」-「SQL命令行工具」-「运行SQL命令行」-「多行命令」
   复制以下代码，并点击 「确认」
  
 ```sql
-insert ignore into `dede_payment` set `code`='paysapi_alipay',`name`='支付宝',`fee`=0,`description`='paysapi提供的支付宝支付',`rank`=1,`config`='a:2:{s:12:"paysapi_uid";a:4:{s:5:"title";s:13:"paysapi.com提供的Uid";s:11:"description";s:21:"在paysapi.com:账号设置->API接口信息拿到";s:4:"type";s:4:"text";s:5:"value";s:0:"";}s:15:"paysapi_token";a:4:{s:5:"title";s:16:"paysapi.com提供的Token";s:11:"description";s:21:"在paysapi.com:账号设置->API接口信息拿到";s:4:"type";s:4:"text";s:5:"value";s:0:"";}}',`enabled`=0,`cod`=0,`online`=1;
+insert ignore into `dede_payment` set `code`='paysapi_alipay',`name`='支付宝',`fee`=0,`description`='paysapi提供的支付宝支付',`rank`=1,`config`='a:2:{s:11:"paysapi_uid";a:4:{s:5:"title";s:3:"Uid";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:41:"在paysapi「账号设置」-「API接口信息」拿到";}s:13:"paysapi_token";a:4:{s:5:"title";s:5:"Token";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:41:"在paysapi「账号设置」-「API接口信息」拿到";}}',`enabled`=0,`cod`=0,`online`=1;
 
-insert ignore into `dede_payment` set `code`='paysapi_alipay_nophone',`name`='支付宝',`fee`=0,`description`='paysapi提供的支付宝(不挂机)支付',`rank`=1,`config`='a:2:{s:12:"paysapi_uid";a:4:{s:5:"title";s:13:"paysapi.com提供的Uid";s:11:"description";s:21:"在paysapi.com:账号设置->API接口信息拿到";s:4:"type";s:4:"text";s:5:"value";s:0:"";}s:15:"paysapi_token";a:4:{s:5:"title";s:16:"paysapi.com提供的Token";s:11:"description";s:21:"在paysapi.com:账号设置->API接口信息拿到";s:4:"type";s:4:"text";s:5:"value";s:0:"";}}',`enabled`=0,`cod`=0,`online`=1;
+insert ignore into `dede_payment` set `code`='paysapi_alipay_nophone',`name`='支付宝',`fee`=0,`description`='paysapi提供的支付宝(不挂机)支付',`rank`=1,`config`='a:2:{s:11:"paysapi_uid";a:4:{s:5:"title";s:3:"Uid";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:41:"在paysapi「账号设置」-「API接口信息」拿到";}s:13:"paysapi_token";a:4:{s:5:"title";s:5:"Token";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:41:"在paysapi「账号设置」-「API接口信息」拿到";}}',`enabled`=0,`cod`=0,`online`=1;
 
-insert ignore into `dede_payment` set `code`='paysapi_wechat',`name`='微信',`fee`=0,`description`='paysapi提供的微信支付',`rank`=1,`config`='a:2:{s:12:"paysapi_uid";a:4:{s:5:"title";s:13:"paysapi.com提供的Uid";s:11:"description";s:21:"在paysapi.com:账号设置->API接口信息拿到";s:4:"type";s:4:"text";s:5:"value";s:0:"";}s:15:"paysapi_token";a:4:{s:5:"title";s:16:"paysapi.com提供的Token";s:11:"description";s:21:"在paysapi.com:账号设置->API接口信息拿到";s:4:"type";s:4:"text";s:5:"value";s:0:"";}}',`enabled`=0,`cod`=0,`online`=1;
+insert ignore into `dede_payment` set `code`='paysapi_wechat',`name`='微信',`fee`=0,`description`='paysapi提供的微信支付',`rank`=1,`config`='a:2:{s:11:"paysapi_uid";a:4:{s:5:"title";s:3:"Uid";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:41:"在paysapi「账号设置」-「API接口信息」拿到";}s:13:"paysapi_token";a:4:{s:5:"title";s:5:"Token";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:41:"在paysapi「账号设置」-「API接口信息」拿到";}}',`enabled`=0,`cod`=0,`online`=1;
 
 ```
 
-  当有提示 `成功执行1个SQL语句！` 即可完成插件安装
+  当有提示 `成功执行3个SQL语句！` 即可完成插件安装
   
 ## 配置参数
 

@@ -44,7 +44,7 @@ class paysapi_alipay
         $notify_url = $cfg_basehost . $this->return_url . "&code=" . $payment['code'];
         $return_url = $notify_url . "&order_id=" . $order['out_trade_no'];
         
-        $istype = 1;
+        $istype = 6;
         $order_id =  $order['out_trade_no'];
 		$price = (int)$order['price'];
 		$uid=  $payment['paysapi_uid'];
