@@ -2,7 +2,7 @@
 
 ## 安装插件
 
-1, 复制 `include/payment/bapp.php` 到您的织梦CMS的 `include/payment/` 下
+1, 复制 `include/payment/paysapi_alipay.php`,`include/payment/paysapi_alipay_nophone.php`,`include/payment/paysapi_wechat.php` 到您的织梦CMS的 `include/payment/` 下
 2, 在您的织梦CMS里面找到 `/plus/carbuyction.php` ，打开并编辑
 
 找到
