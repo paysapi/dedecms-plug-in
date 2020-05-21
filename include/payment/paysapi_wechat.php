@@ -1,13 +1,13 @@
 <?php
 if (!defined('DEDEINC')) exit('Request Error!');
 
-class paysapi_alipay
+class paysapi_wechat
 {
     var $dsql;
     var $mid;
     var $return_url = "/plus/carbuyaction.php?dopost=return";
 
-    function paysapi_alipay()
+    function paysapi_wechat()
     {
         global $dsql;
         $this->dsql = $dsql;
@@ -15,7 +15,7 @@ class paysapi_alipay
 
     function __construct()
     {
-        $this->paysapi_alipay();
+        $this->paysapi_wechat();
     }
 
     function SetReturnUrl($returnurl = '')
