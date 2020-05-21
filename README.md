@@ -36,7 +36,7 @@ insert ignore into `dede_payment` set `code`='paysapi_wechat',`name`='微信',`f
 ## 配置参数
 
 1. 进入 「织梦CMS管理后台」-「系统」-「系统设置」-「支付工具」-「支付接口设置」  
-1. 分别找到 'paysapi_alipay', 'paysapi_alipay_nophone', 'paysapi_wechat' 后点击 「安装」  
+1. 分别找到 paysapi提供的支付宝或微信 后点击 「安装」  
 1。 点 「更改」，填上paysapi `Uid` 和 `Token` ，并点 「确定」
 
 
